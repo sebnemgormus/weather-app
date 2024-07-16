@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="search">
+        <input type="text" placeholder="Enter a city name..." spellcheck="false">
+        <button class="search-btn"><img src="images/search.png" alt="Search"></button>
+        <button class="geolocate"><img src="images/pin.png" alt="Geolocate"></button>
+    </div>
+    <div class="error">
+        <p>Invalid city name</p>
+    </div>
+    <div class="weather">
+        <h1 class="city"></h1>
+        <img src="images/rain.png" alt="Weather Icon" class="weather-icon">
+        <h2 class="temp"></h2>
+   
+        <div class="details">
+            <div class="col">
+                <img src="images/humidity.png" alt="Humidity">
+                <div>
+                    <p>Humidity</p>
+                    <p class="humidity"></p>       
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/wind.png" alt="Wind Speed">
+                <div>
+                    <p>Wind Speed</p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forecast">
+        <h3>3-Day Forecast</h3>
+        <div class="forecast-container"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
